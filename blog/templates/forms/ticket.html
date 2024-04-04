@@ -1,0 +1,75 @@
+{% extends "parent/base.html" %}
+{% block title %} ارتباط با پشتیبانی {% endblock title %}
+{% comment %}  {% endcomment %}
+{% include "partials/header.html" %}
+{% comment %}  {% endcomment %}
+{% block content %}
+
+{% comment %} <h1>ticket page</h1> {% endcomment %}
+
+<form method = "POST">
+    {% csrf_token %}
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="signup-form">
+                    <form action="" class="mt-5 border p-4 bg-light shadow">
+                        <h4 class="mb-5 text-secondary">send a ticket</h4>
+                         {% if form.errors %}
+                            <h3 class="text-danjer">خطاهای زیر را رفع کنید</h3>
+                            <br>
+                            {% for i in form %}
+                                {% if i.errors %}
+                                        {% for error in i.errors %}
+                                           {{i.lable}} : {{error}}
+                                        {% endfor %}                                
+                                {% endif %}                                
+                            {% endfor %}
+                        {% endif %}
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <label>نام خود را وارد کنید<span class="text-danger">*</span></label>
+                                <input type="text" name="name" {% if form.name.value %} value="{{form.name.value}}" {% endif %}  class="form-control" placeholder="Enter First Name">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label>ایمیل <span class="text-danger">*</span></label>
+                                <input type="email" name="email" class="form-control" placeholder="ایمیل خود را وارد  کنید">
+                                {% comment %} <span>{{form.email.errors}}</span> {% endcomment %}
+                            </div>
+    
+                            <div class="mb-3 col-md-6">
+                                <label>شماره تماس<span class="text-danger">*</span></label>
+                                <input type="text" name="phone" class="form-control" placeholder="Enter phone">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label>موضوع<span class="text-danger">*</span></label>
+                                <select name="sunject" class="form-control" >
+                                    <option value="پیشنهاد">پیشنهاد</option>
+                                    <option value="انتقاد">انتقاد</option>
+                                    <option value="گزارش">گزارش</option>
+
+                                </select>
+                            </div>
+                            <div class="mb-3 col-md-12">
+                                <label>پیام خود را وارد کنید<span class="text-danger">*</span></label>
+                                <textarea  cols="30" rows="10" name="massege" class="form-control" placeholder=""></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" value="ثبت نظر" class="btn btn-primary float-end">
+                               {% comment %} <button >Signup Now</button> {% endcomment %}
+                            </div>
+                        </div>
+                    </form>
+                    {% comment %} <p class="text-center mt-3 text-secondary">If you have account, Please <a href="#">Login Now</a></p> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+{% endblock  %}
+{% comment %}  {% endcomment %}
+{% include "partials/footer.html" %}
+{% comment %}  {% endcomment %}

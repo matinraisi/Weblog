@@ -1,0 +1,11 @@
+{% extends "parent/base.html" %}
+{% load jformat %}
+{% block title %}detail post{% endblock title %}
+
+{% block content %}
+{% comment %} <h1>hello worls</h1> {% endcomment %}
+<hr>
+<h1>{{post}}</h1>
+<p>{{post.publish|jformat:"%Y/%m/%d - (%H:%M)"}}</p>
+<hr>
+{% endblock content %}

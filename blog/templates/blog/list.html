@@ -1,0 +1,18 @@
+{% extends "parent/base.html" %}
+{% block title %}list post{% endblock title %}
+
+{% block content %}
+<h1 class="post-header" >post list</h1>
+<ol style="--length: {{posts|length}}" role="list">
+    {% for i in posts %}
+    <li style="--i: {{forloop.counter}}">
+        <h3><a style="text-decoration:none; color:black;" href="{{i.get_absolute_url}}">{{i.title}}</a></h3>
+        {% comment %} <a href=""><h3></h3></a> {% endcomment %}
+        <p>{{i.description | truncatewords:8}}</p>
+        {% comment %} <p>{{i.}}</p> {% endcomment %}
+    </li>
+    {% endfor %}
+</ol>
+{% include "partials/pageination.html" with page_obj=page_obj%}
+<hr>
+{% endblock content %}
