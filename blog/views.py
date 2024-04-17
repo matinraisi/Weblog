@@ -1,13 +1,14 @@
 from django.shortcuts import render , get_object_or_404 ,redirect
-from django.http import HttpResponse , Http404
+from django.http import HttpResponse , Http404 
 from .models import Post , Ticket
 from .forms import *
+from django.views.decorators.http import require_POST
 
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.views.generic import ListView , DetailView
 # Create your views here.
 def Home(request):
-    return HttpResponse("home page ")
+    return render(request , "blog/index.html" )
 
 """ """
 # def Post_list(request):
@@ -42,8 +43,12 @@ def Post_detail(request , id):
     #     post = Post.published.get(id=id)
     # except:
     #     raise Http404("not found post!...")
+    form = CommentForm()
+    comment = post.comments.filter(active =True)
     context = {
         "post" : post,
+        "form" : form,
+        "commetn":comment,
     }
     return render (request , "blog/detail.html" , context)
     
@@ -67,3 +72,20 @@ def create_ticket(request):
         #     "form" : form
         # }
     return render(request, "forms/ticket.html", {"form" : form})    
+
+
+@require_POST
+def post_comments(request , post_id):
+    post = get_object_or_404(Post , id=post_id , status = Post.Status.PUBLISH) 
+    comment = None
+    form = CommentForm(data=request.POST)
+    if form.is_valid():
+        comment = form.save(commit=False)
+        comment.post = post
+        comment.save()
+    context = {
+        "post": post,
+        "form" : form,
+        "comment":comment
+    }
+    return render(request , "forms/comment.html" ,context) 

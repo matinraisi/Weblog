@@ -8,4 +8,27 @@
 <h1>{{post}}</h1>
 <p>{{post.publish|jformat:"%Y/%m/%d - (%H:%M)"}}</p>
 <hr>
+<form method="POST" action="{% url "blog:post_comments" post.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value = "ارسال کامنت" >
+</form>
+
+<hr><hr><br>
+<div>
+{% with commetn.count as cm %}
+{% comment %} pluralize  for s jame gozashteh mishe {% endcomment %}
+    {{ cm }} commetn{{ cm|pluralize }}
+{% endwith %}
+</div>
+
+{% for i in commetn %}
+    <h1> {{i.name}} </h1>
+    <br>
+    <p> {{i.body|linebreaks}} </p>
+{% empty %}
+    <h3>کامنتی وجود ندارد</h3>
+{% endfor %}
+
+
 {% endblock content %}

@@ -22,7 +22,7 @@ class Post(models.Model):
     created = jmodels.jDateTimeField(auto_now_add=True,verbose_name = "تاریخ ساخت")
     updated = jmodels.jDateTimeField(auto_now=True)
     status = models.CharField(max_length =10 , choices = Status.choices , default = Status.DRAFT,verbose_name = "وضعیت")
-
+    reading_time = models.PositiveIntegerField(verbose_name = "تایم مطالعه")
     # objects = models.Manager()
     objects = jmodels.jManager()
     published = publishedManager()

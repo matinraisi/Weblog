@@ -1,6 +1,6 @@
 from typing import Any
 from django import forms
-
+from .models import Comment
 
 class TicketForm(forms.Form):
      subject_select = (
@@ -24,9 +24,17 @@ class TicketForm(forms.Form):
                    return data
 
 
-
-
-
-     
-        
-    
+class CommentForm(forms.ModelForm):
+         
+     def clean_name(self):
+         name = self.cleaned_data["name"]
+         if len(name) >3:
+              if not name.isnumeric:
+                   raise forms.ValidationError("نام کوتاه است!")
+              else:
+                   return name
+     class Meta:
+          model = Comment
+          # exclude = ['created']
+          fields = ['name','body']
+          
