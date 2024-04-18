@@ -1,6 +1,6 @@
 from django import template
 from ..models import Post , Comment
-from django.db.models import Count
+from django.db.models import Count , Min , Max
 from markdown import markdown
 
 
@@ -18,6 +18,11 @@ def total_comment():
 @register.simple_tag
 def favirate_post(count=5):
     return Post.published.annotate(comment_count = Count('comments')).order_by('-comment_count')[:count]
+
+@register.simple_tag
+def min_post():
+    return Post.published.aggregate(Max('reading_time'))
+
 
 @register.inclusion_tag("partials/latest_post.html")
 def latest_post(count=4):

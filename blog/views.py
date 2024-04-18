@@ -10,7 +10,6 @@ from django.views.generic import ListView , DetailView
 def Home(request):
     return render(request , "blog/index.html" )
 
-""" """
 # def Post_list(request):
 #     posts = Post.published.all()
 #     paginator = Paginator(posts, 2)
@@ -25,14 +24,11 @@ def Home(request):
 #         "posts" : posts,
 #     }
 #     return render(request , "blog/list.html" , context )
-
 class PostListview(ListView):
     paginate_by = 3  
     queryset = Post.published.all()
     context_object_name = "posts"
     template_name = "blog/list.html"
-
-""""""
 # ----------------------------------------
 # class PostDitailview(DetailView):
 #     model = Post
@@ -73,7 +69,6 @@ def create_ticket(request):
         # }
     return render(request, "forms/ticket.html", {"form" : form})    
 
-
 @require_POST
 def post_comments(request , post_id):
     post = get_object_or_404(Post , id=post_id , status = Post.Status.PUBLISH) 
@@ -89,3 +84,23 @@ def post_comments(request , post_id):
         "comment":comment
     }
     return render(request , "forms/comment.html" ,context) 
+
+def crete_post(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            Post.objects.create(
+                title = cd['title'],
+                author = cd['author'],
+                slug = cd['slug'],
+                status = cd['status'],
+                reading_time = cd['reading_time'],
+                description = cd['description'],
+            )
+            return redirect("blog:index")
+        # else:
+        #      print(form.errors)
+    else:
+        form = PostForm()
+    return render (request , "blog/createpost.html" , {"form" :form,})

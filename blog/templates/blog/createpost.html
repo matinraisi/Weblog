@@ -1,0 +1,130 @@
+{% extends "parent/base.html" %}
+{% block title %}ایجاد پست {% endblock title %}
+
+{% block content %}
+
+<h1>create post</h1>
+{% comment %} {% if form.errors %}
+    <div class="alert alert-danger">
+        <ul>
+            {% for field, errors in form.errors.items %}
+                {% for error in errors %}
+                    <li>{{ field }}: {{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %} {% endcomment %}
+<form method = "POST">
+    {% csrf_token %}
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="signup-form">
+                    <form action="" class="mt-5 border p-4 bg-light shadow">
+                        <h4 class="mb-5 text-secondary">create post</h4>
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <label>عنوان پست<span class="text-danger">*</span></label>
+                                <input type="text" name="title" {% if form.title.value %} value="{{form.title.value}}" {% endif %}  class="form-control" >
+                                {% if form.title.errors %}
+                                    <p class="alert alert-danger">
+                                        {% for error in form.title.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </p>
+                            {% endif %}
+
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label>نویسنده<span class="text-danger">*</span></label>
+                                <select name="author" class="form-control" >
+                                    <option value="">نویسنده را انتخاب کنید</option>
+                                    {% for U in form.author.field.queryset %}
+                                    <option value="{{U.id}}">{{U.username}}</option>
+                                    {% endfor %}
+                                </select>
+                                {% if form.author.errors %}
+                                    <p class="alert alert-danger">
+                                        {% for error in form.author.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </p>
+                            {% endif %}
+
+                            </div>
+    
+                            <div class="mb-3 col-md-6">
+                                <label>اسلاگ<span class="text-danger">*</span></label>
+                                <input type="text" name="slug" class="form-control">
+                                {% if form.slug.errors %}
+                                <p class="alert alert-danger">
+                                    {% for error in form.slug.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </p>
+                                {% endif %}
+
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label>وضعیت<span class="text-danger">*</span></label>
+                                <select name="status" class="form-control">
+                                    <option value="">وضعیت</option>
+                                   {% for value, label in form.fields.status.choices %}
+                                   <option value="{{ value }}">{{ label }}</option>
+                                   {% endfor %}                                   
+                                </select>
+                                {% if form.status.errors %}
+                                <p class="alert alert-danger">
+                                    {% for error in form.status.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </p>
+                                  {% endif %}
+
+                            </div>
+                            
+                            <div class="mb-3 col-md-12">
+                                <label>تایم مطالعه <span class="text-danger">*</span></label>
+                                <input type="number" name="reading_time" class="form-control">
+                                {% if form.reading_time.errors %}
+                                <p class="alert alert-danger">
+                                    {% for error in form.reading_time.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </p>
+                        {% endif %}
+
+                            </div>
+                            <div class="mb-3 col-md-12">
+                                <label>توضیحات<span class="text-danger">*</span></label>
+                                <textarea  cols="30" rows="10" name="description" class="form-control"></textarea>
+                                {% if form.description.errors %}
+                                <p class="alert alert-danger">
+                                    {% for error in form.description.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </p>
+                        {% endif %}
+
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" value="ثبت نظر" class="btn btn-primary float-end">
+                               {% comment %} <button >Signup Now</button> {% endcomment %}
+                            </div>
+                        </div>
+                    </form>
+                    <p class="text-center mt-3 text-secondary">If you have account, Please <a href="#">Login Now</a></p>
+                    {% comment %} <form action="">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                    </form> {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock  %}
+
+

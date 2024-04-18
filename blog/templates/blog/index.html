@@ -6,15 +6,32 @@
 <h1>home page</h1>
 <p>تعداد کل پست ها:{% total_post %}</p>
 <p>تعداد کل کامنت ها:{%total_comment%} </p>
+<p>کمترین زمان مطالعه پست ها:{% min_post %} </p>
 
+<br><br>
 {% latest_post 5%}
 <br><br><hr>
+
+<div class="alert alert-info">
+    <h1><a class="text-black" style="text-decoration: none;" href="{% url "blog:crete_post" %}">افزودن پست</a></h1>
+</div>
+<br><br><hr>
+
 {% favirate_post as fav_post %}
 
-{% for fav in fav_post %}
-
-<p><a href="{{post.get_absolute_url}}">{{fav.title}}</a>    with :<b>{{fav.comment_count}}</b></p>
-
-{% endfor %}
+<div class="container">
+    <div class="row">
+        <h3 class="text-danger">پست های محبوب</h3>
+        {% for fav in fav_post %}
+    <div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-success">محبوب ترین</div>
+        <div class="card-body text-success">
+          <h5 class="card-title"><a href="{{post.get_absolute_url}}">{{fav.title}}</a></h5>
+        </div>
+        <div class="card-footer bg-transparent border-success">با {{fav.comment_count}} کامنت</div>
+      </div>
+    {% endfor %}
+    </div>
+</div>
 
 {% endblock content %}

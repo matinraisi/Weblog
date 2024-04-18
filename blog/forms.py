@@ -1,7 +1,6 @@
-from typing import Any
 from django import forms
-from .models import Comment
-
+from .models import Comment , Post
+from django.contrib.auth.models import User
 class TicketForm(forms.Form):
      subject_select = (
          ("پیشنهاد" , "پیشنهاد"),
@@ -22,14 +21,11 @@ class TicketForm(forms.Form):
                    raise forms.ValidationError("شماره تلفن اشتباه وارد شده است باید عدد باشد !")
               else:
                    return data
-
-
-class CommentForm(forms.ModelForm):
-         
+class CommentForm(forms.ModelForm):      
      def clean_name(self):
          name = self.cleaned_data["name"]
-         if len(name) >3:
-              if not name.isnumeric:
+         if name :
+              if len(name)<3:
                    raise forms.ValidationError("نام کوتاه است!")
               else:
                    return name
@@ -38,3 +34,25 @@ class CommentForm(forms.ModelForm):
           # exclude = ['created']
           fields = ['name','body']
           
+class PostForm(forms.Form):
+    author = forms.ModelChoiceField(queryset=User.objects.all() ,required=True)
+    title = forms.CharField(max_length =50 , required=True)
+    description = forms.CharField(widget = forms.Textarea , required=True)
+    slug = forms.SlugField(max_length =50 , required=True)
+    status_choices = (
+        ('DF', 'Draft'),
+        ('PB', 'Publish'),
+        ('RJ', 'Rejected')
+     )
+    status = forms.ChoiceField(choices = status_choices ,required=True)    
+    reading_time = forms.IntegerField(required=True)
+
+    def clean_title(self):
+         title = self.cleaned_data["title"]
+         if title:
+              if len(title)<3:
+                   raise forms.ValidationError("نام کوتاه است!")
+              else:
+                    return title
+     
+     
