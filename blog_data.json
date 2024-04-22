@@ -1,0 +1,1164 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-03-28T21:07:48.908Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "first Post",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-03-29T12:00:49.330Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "django",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-03-30T21:30:23.846Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "first Post",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-03-30T21:31:04.284Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-03-31T10:35:01.186Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "first Post",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-03-31T11:33:50.882Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "matin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-03-31T11:35:03.089Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "توسعه افزونه مرورگر با جاوااسکریپت",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-03-31T11:36:48.392Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "پروژه های تخصصی با Html، Css + دیزاین اختصاصی",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-03-31T11:37:22.014Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "آموزش ساخت ربات تلگرام با PHP",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-03-31T11:37:55.973Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "دوره پروژه محور متخصص جنگو",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-03-31T11:38:40.140Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "توسعه کتابخانه با جاوااسکریپت",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-03-31T11:39:31.048Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "آموزش جامع api نویسی با PHP",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-03-31T11:40:13.165Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "تست نفوذ با BadUSB",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-03-31T11:40:30.559Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "آموزش جامع api نویسی با PHP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-03-31T11:40:30.562Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "آموزش ساخت ربات تلگرام با PHP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-03-31T11:40:30.564Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "تست نفوذ با BadUSB",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-03-31T11:40:30.566Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "توسعه کتابخانه با جاوااسکریپت",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-03-31T11:40:30.569Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "دوره پروژه محور متخصص جنگو",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-03-31T11:40:30.571Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "پروژه های تخصصی با Html، Css + دیزاین اختصاصی",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-04-04T10:02:18.301Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "matin raisi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-04-04T10:02:18.304Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "matin raisi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-04-04T10:02:18.308Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "متین ریسی",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-04-04T10:05:01.141Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "matin raisi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-04-04T10:50:43.279Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "matin raisi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-04-04T10:50:43.285Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "matin raisi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-04-17T10:05:53.285Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "matin raisi : آموزش ساخت ربات تلگرام با PHP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-04-17T10:12:39.046Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "11 : آموزش ساخت ربات تلگرام با PHP",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-04-17T10:14:10.532Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "متین ریسی : django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-04-17T10:14:25.432Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "متین ریسی : django",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-04-17T10:22:07.184Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "متین : django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-04-17T10:25:58.323Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "متین : django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0645\\u062a\\u0646 \\u06a9\\u0627\\u0645\\u0646\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-04-17T10:30:22.972Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "matin raisi : توسعه کتابخانه با جاوااسکریپت",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-04-18T12:38:12.012Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "matin raisi",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-04-18T13:31:02.418Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-04-18T13:31:28.439Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0648\\u0636\\u0639\\u06cc\\u062a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-04-18T14:11:55.667Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "django",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u06cc\\u0645 \\u0645\\u0637\\u0627\\u0644\\u0639\\u0647\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-04-18T14:12:08.436Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "پروژه های تخصصی با Html، Css + دیزاین اختصاصی",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u06cc\\u0645 \\u0645\\u0637\\u0627\\u0644\\u0639\\u0647\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add post",
+        "content_type": 7,
+        "codename": "add_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change post",
+        "content_type": 7,
+        "codename": "change_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete post",
+        "content_type": 7,
+        "codename": "delete_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view post",
+        "content_type": 7,
+        "codename": "view_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add ticket",
+        "content_type": 8,
+        "codename": "add_ticket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change ticket",
+        "content_type": 8,
+        "codename": "change_ticket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete ticket",
+        "content_type": 8,
+        "codename": "delete_ticket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view ticket",
+        "content_type": 8,
+        "codename": "view_ticket"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add کامنت",
+        "content_type": 9,
+        "codename": "add_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change کامنت",
+        "content_type": 9,
+        "codename": "change_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete کامنت",
+        "content_type": 9,
+        "codename": "delete_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view کامنت",
+        "content_type": 9,
+        "codename": "view_comment"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$qNfxhPv63Jy7KbsIzJska8$Ja0l/xbk7p/3gesLjc/wo3F7IWLjDm4eMxQrE153M28=",
+        "last_login": "2024-04-17T10:05:28.911Z",
+        "is_superuser": true,
+        "username": "blog",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-28T20:24:20.088Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$BV0sbhFfTk2VSEHNBnsYF0$EQiDlUFsEyOf0oPLQDfP4j8RJAZmPzhESvR4ZC41MZM=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "matin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-03-31T11:33:50.332Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "blog",
+        "model": "post"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "blog",
+        "model": "ticket"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "blog",
+        "model": "comment"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kj03pdey482e1xz2bybu5ragbqnx9ric",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGln-rH-U9DmDtbYXHEC2FCcV4u4QKQW0b2bei0Xc1hq3QUucCzszyU6_W8L8oLaDcsd26zz3ti5z4rvCDzr41As9L4f7d1Bx1G8tRLhqBxpEtpogYYBCJIJEr5LxFq1LYLwUwiuJRTlMFDSqYgC8tYq9P8ExNtc:1rpwoU:QYzSpbcjoRl0r4tyDFfKbHATuN7ThvzHy3Wqu0v94p8",
+        "expire_date": "2024-04-11T20:57:30.341Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "svechspjww7c4d51wxgx8g6gyc10v8cp",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGln-rH-U9DmDtbYXHEC2FCcV4u4QKQW0b2bei0Xc1hq3QUucCzszyU6_W8L8oLaDcsd26zz3ti5z4rvCDzr41As9L4f7d1Bx1G8tRLhqBxpEtpogYYBCJIJEr5LxFq1LYLwUwiuJRTlMFDSqYgC8tYq9P8ExNtc:1rx2AS:8rnE_8CO8UQWnk2Oip51ZkiuGFkOek_GaBkCMQlOhG8",
+        "expire_date": "2024-05-01T10:05:28.919Z"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+        "author": 1,
+        "title": "first Post",
+        "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.\r\nلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.\r\nلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+        "slug": "first-post",
+        "publish": "2024-03-29T00:36:24+03:30",
+        "created": "2024-03-29T00:37:48.904+03:30",
+        "updated": "2024-03-31T14:05:01.182+03:30",
+        "status": "PB",
+        "reading_time": 0
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+        "author": 1,
+        "title": "django",
+        "description": "Companies, organizations and governments have used Django to build all sorts of things — from content management systems to social networks to scientific computing platforms.\r\nSome of the busiest sites on the planet use Django’s ability to quickly and flexibly scale to meet the heaviest traffic demands.\r\n\r\nDjango takes security seriously and helps developers avoid many common security mistakes, such as SQL injection, cross-site scripting, cross-site request forgery and clickjacking. Its user authentication system provides a secure way to manage user accounts and passwords.",
+        "slug": "django",
+        "publish": "2024-03-29T15:30:28+03:30",
+        "created": "2024-03-29T15:30:49.326+03:30",
+        "updated": "2024-04-18T17:41:55.665+03:30",
+        "status": "PB",
+        "reading_time": 10
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+        "author": 2,
+        "title": "توسعه افزونه مرورگر با جاوااسکریپت",
+        "description": "یکی از پرکاربردترین برنامه ها افزونه ها هستن که با نصب روی یک برنامه یا مرورگر امکانات کاربردی خیلی خوبی رو فراهم‌ میکنن و هر شخص با توجه به تخصص خودش به افزونه های مختلفی برای کارش نیاز داره،  در روز ما بیشترین جایی که جستجو های خودمون رو انجام میدیم داخل مرورگر هست و به تعامل با وبسایت ها میپردازیم ، حالا مرورگر ها خودشون به تنهایی همه امکانات رو ندارن ولی با ایجاد قسمت های افزونه ها میتونی کلی قابلیت با افزونه به مرورگر اضافه کنی ، به طور مثال دوست داری وقتی وارد یک سایت میشی تمام عکس،آیکون و.. اون رو بدست بیاری و دانلود کنی ، یا یک افزونه داشته باشی که سایت هایی که دوست نداری باز بشه رو مسدود کنه ، یا افزونه ای که برای شما که بتونی از طریق مرورگر به هر شماره تلفنی پیام ارسال کنی ، پس کلی کار جالب میشه انجام داد ، و قطعا کسانی هستن که دنبال افراد متخصص در طراحی افزونه مرورگر میگردن ، ما هم قصد در این دوره آموزشی با هم قدم به قدم در قالب پروژه یاد بگیریم چطور میتونیم افزونه کاربردی برای مرورگر  بسازیم ، شما اگر طراح و برنامه نویس سایت باشید با زبان های html,css,javascript کار کردید دقیقا با همین زبان ها میشه افزونه هم طراحی کرد برای مرورگر ، هم دانش فرانت شما قوی میشه ، هم یک نوع روش درآمد زایی جدید یاد خواهید گرفت ، داخل این دوره افزونه هایی زیادی در قالب پروژه طراحی خواهیم یاد گرفت ، و چطور در فروشگاه گوگل منشتر کنیم‌ و کلی راه دیگه برای درآمد زایی ، شما حتی میتونید با پرداخت حق  اشتراک کاربر افزونه رو برای اون فعال کنید  و کلی کار دیگه که در دوره به اون اشاره خواهیم کرد",
+        "slug": "tosaah-fzonh-mrorr-b-gosrt",
+        "publish": "2023-06-21T15:04:11+03:30",
+        "created": "2024-03-31T15:05:03.087+03:30",
+        "updated": "2024-03-31T15:05:03.087+03:30",
+        "status": "PB",
+        "reading_time": 0
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+        "author": 1,
+        "title": "پروژه های تخصصی با Html، Css + دیزاین اختصاصی",
+        "description": "دوره مینی پروژه های HTML،CSS یکی از دوره های جدید سبزلرن که به درخواست دانشجویان عزیز و به عنوان پوشش دهنده فاصله بین دوره آموزش CSS و دوره طراحی قالب درنظر گرفته شده تا موتور شمارو برای شروع تسلط عملی روی کدنویسی مهمترین کامپیوننت ها و بخش های مختلف صفحات وب با HTML/CSS بعد از یادگیری کامل اونها در دوره مقدماتی، روشن کنه.\r\n\r\nبعضی از افرادی که تازه دوره های HTML/CSS رو گذروندن، به قول خودشون یه چیزایی از HTML و CSS میدونن، وقتی که ازشون بخواید یک مگامنو، اسلایدر، فرم و … مشابه یک وب سایت خاص یا از روی دیزاین اختصاصی کدنویسی کنن، تازه متوجه میشن که هنوز آمادگی لازم رو ندارن چون امتیاز اصلی درخشیدن در بازار کار و تولید پروژه های خلاقانه، تسلط به طراحی انواع کامپوننت هاست. فقط در این صورت هست که حس بد گفتن جمله ” اینو بلد نیستم ” به کارفرما یا همکار رو تجربه نمی کنید…\r\n\r\nاحتمالا میتونید حدس بزنید که در این دوره قرار نیست کدنویسی جدیدی به شما آموزش داده بشه اما عوضش با استفاده از دانسته هاتون در مورد HTML/CSS و نظم دهی به اونها، میتونید به مرحله ای برسید که انواع کامپوننت ها و المان های یک صفحه وب رو صفر تا صد طراحی کرده و از خلق اونها لذت ببرید. چیزی که احتمالا جزو آرزوهاتون بوده از صفر انجامش بدید اون هم به تنهایی و بدون نیاز به کمک گوگل یا دیگران!",
+        "slug": "roh-h-tkhss-b-html-css-dzn-khtss",
+        "publish": "2023-09-22T15:06:24+03:30",
+        "created": "2024-03-31T15:06:48.388+03:30",
+        "updated": "2024-04-18T17:42:08.425+03:30",
+        "status": "PB",
+        "reading_time": 30
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+        "author": 2,
+        "title": "آموزش ساخت ربات تلگرام با PHP",
+        "description": "دوره ساخت ربات تلگرام با PHP یکی از دوره های جدید، جذاب و بسیار کاربردی سبزلرن هست که به دلیل مستقل بودن از آموزش های برنامه نویسی و فاصله کوتاه یادگیری تا کسب درآمد، طرفداران خاص خودش رو داره. حالا ببینیم اساسا ربات های تلگرام چرا ایجاد شدن و دقیقا چه کاربردی دارن؟\r\n\r\nربات های تلگرام در روزهایی که هنوز هوش مصنوعی ترند نشده بود، به عنوان یک بازوی هوش مصنوعی وارد فضای تلگرام شدن و با کاربردهای جذابی که داشتن، به سرعت در تمام کسب و کارها، خدمات و فرآیندهای تبلیغاتی نفوذ کرده و محبوبیت بالایی به دست آوردن.\r\n\r\nیکی از دلایل محبوبیت موضوع ربات نویسی در محیط تلگرام، ایجاد فضای تعاملی مستقیم با حجم خیلی زیادی از کاربرها بدون درگیر کردن نیروی انسانی هست که علاوه بر کم هزینه بودن برای کسب و کارها و درآمدزایی، قابلیت ها و سرعت شگفت انگیزی هم در پاسخگویی به درخواست های کاربران دارن.\r\n\r\nاین ربات از کارهای ساده مثل یادآوری کارهای روزانه تا یک فروشگاه اینترنتی با تمام امکانات و همه نوع سرویس تحت وب کاربرد دارن و میتونن در سریع ترین زمان ممکن و به صورت 24 ساعته با کاربرها در ارتباط باشن.\r\n\r\nاحتمالا تا الان از ربات های مختلفی در تلگرام استفاده کردید و دیدید که چقدر کار کردن با اونها آسون و اکثرا بدون هزینه ست. با توجه به توضیحاتی که داده شد و همینطور جامعه میلیاردی کاربران تلگرام و تقاضای زیادی که برای این تخصص ایجاد شده، یادگیری این مهارت میتونه یک درآمد پایدار و جذاب با کمرین دردسر رو براتون ایجاد کنه که در ادامه بهتون میگیم که چرا یاد گرفتن ربات نویسی تلگرام مهمه و یه سرمایه گذاری تضمینی محسوب میشه :\r\n\r\nساخت آسان\r\nربات های تلگرام بر اساس پلتفرم Bot API تلگرام ساخته میشن. این API به توسعه دهنده ها ربات کمک میکنه به راحتی ربات های خودشون رو ایجاد و کانفیگ کنن. این سهولت باعث میشه حتی افرادی که تجربه محدودی در زمینه برنامه نویسی دارن هم بتونن ربات های حرفه ای بسازن.\r\n\r\nپشتیبانی از مولتی مدیا (چندرسانه ای)\r\nیکی از مزیت های فوق العاده ربات های تلگرام رو میتونیم قابلیت پشتیبانی (ارسال و دریافت) از پیام های متنی، تصاویر، ویدئو، فایل و صدا بدونیم که برای انتقال و تبادل همه انواع محتواها با کاربران دست شمارو باز خواهد گذاشت.\r\n\r\nاستفاده از کلمات کلیدی و دستورات خاص:\r\nبه عنوام مثالی از مزیت شماره 2، ربات تلگرام میتونه با استفاده از کلمات کلیدی و دستورات خاصی که براش تعریف می کنیم (دریافتی از کاربر) پاسخ مشخصی رو به کاربر ارائه بده. در واقع مثل یک دستیار حرفه ای با کاربر صحبت میکنه و بر اساس خواسته های اون عمل میکنه.\r\n\r\nامنیت بالا\r\nتلگرام از پروتکل MTProto برای ارتباطات ربات ها با سرورهای تلگرام استفاده میکنه که به عنوان یک پروتکل امن و رمزنگاری شده شناخته میشه. بنابراین خیال توسعه دهنده ها و کاربران از بابت امنیت اطلاعات تبادل شده (به شرط معتبر بودن خود ربات!)  کاملا راحت هست.\r\n\r\nانعطاف پذیری در کاربرد\r\nهمونطور که قبلا هم اشاره شد، انعطاف پذیری و تنوع کاربردهای ربات تلگرام یکی از دلایل محبوبیت و رایج شدن اونها بوده و باعث شده که توسعه دهنده ها بتونن انواع پروژه از جمله ربات های چت، اخبار، بازی، خدمات بانکی، فروشگاهی و … راه اندازی کنن که حقیقتا فوق العادست!\r\n\r\nپشتیبانی از زبان های مختلف\r\nاز اونجایی که تلگرام از زبان های مختلفی برای توسعه ربات ها پشتیبانی میکنه، تولید ربات هم با انواع زبان ها از جمله فارسی به راحتی قابل انجام هست. بنابراین چه در پروژه های ایرانی و چه بین المللی میتونید ربات هایی مخصوص همون زبان یا حتی چندزبانه تولید کنید.\r\n\r\nاین موارد بخش رو میشه بخش کوچیکی از مزیت ها و ویژگی های ربات تلگرام دونست که هرکدوم ارزش خاصی به اونها اضافه کرد. حالا که آشنایی بهتری با ربات پیدا کردید وقتشه که مهمترین سوالات و دغدغه هایی که ممکنه قبل از ثبت نام در دوره تو ذهنتون باشه رو پاسخ بدیم. پس با ما همراه باشید…",
+        "slug": "mozsh-skht-rbt-tlrm-b-php",
+        "publish": "2024-06-20T15:06:58+03:30",
+        "created": "2024-03-31T15:07:22.012+03:30",
+        "updated": "2024-03-31T15:10:30.560+03:30",
+        "status": "PB",
+        "reading_time": 0
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+        "author": 1,
+        "title": "دوره پروژه محور متخصص جنگو",
+        "description": "این فریم ورک قدرتمند که توسط غول های تکنولوژی جهان به طور گسترده ای استفاده میشه، کراس پلتفرم بوده و علاوه بر اینکه با تمام سیستم عامل ها و بانک های اطلاعاتی سازگاری کامل داره. همین انعطاف به شما کمک میکنه تا در کوتاه ترین زمان و به ساده ترین شکل برنامه های کوچک و بزرگ متنوعی با جنگو تولید کنید.\r\n\r\nدر واقع یکی از اهداف اصلی ایجاد فریم ورک جنگو، آسون کردن کار برای توسعه وبسایت ها و اپلیکیشن های اختصاصی بوده و کاملا هم در این زمینه موفق عمل کرده به طوریکه امروز با داشتن بازار کار فوق العاده و جذاب، یکی از میانبرهای شگفت انگیز برای رشد تخصص و درامد برای توسعه دهنده ها محسوب میشه.\r\n\r\nاز ویژگی های فریم ورک قدرتمند جنگو میتونیم به موارد زیر اشاره کنیم:\r\n\r\nسئو\r\nیکی از امتیازات ویژه جنگو که باعث شده طرفداران زیادی در سراسر جهان پیدا کنه، بهینه سازی فوق العاده سایت و بهبود سئو هست که میتونه آینده موفق اون رو تا حد زیادی تضمین کنه.\r\n\r\nامنیت بسیار بالا\r\nدر آموزش جنگو به عنوان یکی از وارثان پایتون، امنیت در سطح بسیار بالایی قرار داره و تمام موارد امنیتی به خوبی پیشبینی شده تا توسعه دهنده دردسر کمتری در این زمینه داشته باشه.\r\n\r\nجامعه و کامیونیتی\r\nیکی از مباحث خیلی مهم در یادگیری یک تکنولوژی اینه که بررسی کنیم گستردگی و فعالیت کامیونیتی اون در چه سطح و کیفیتی قرار داره و اینکه تا چه اندازه منابع آموزشی و ابزارهای کمکی برای اون تدارک دیده شده. فریم ورک جنگو از این نظر هم یکی از بهترین هاست و به طور مستمر با ارائه آپدیت های جدید و رفع دغدغه ها و نواقص احتمالی، طرفداران خودش رو در بالاترین و به روزترین سطح نگه میداره.\r\n\r\nتوسعه سریع\r\nاز اونجایی که جنگو از مدل MVC  هم در قالب MVT استفاده میکنه، باعث میشه تا کار توسعه پروژه به راحتی امکان پذیر باشه.\r\n\r\nاین دوره چه فرقی با بقیه دوره ها داره؟",
+        "slug": "dorh-roh-mhor-mtkhss-gno",
+        "publish": "2024-03-15T15:07:28+03:30",
+        "created": "2024-03-31T15:07:55.971+03:30",
+        "updated": "2024-03-31T15:10:30.567+03:30",
+        "status": "PB",
+        "reading_time": 0
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 7,
+    "fields": {
+        "author": 2,
+        "title": "توسعه کتابخانه با جاوااسکریپت",
+        "description": "مصاحبه کننده:ببخشید شما جاوااسکریپت بلد هستید؟!! برنامه نویس: بله چند کتابخونه هم براش توسعه دادم این هم لینک کتابخونه ها با مستندات\r\n\r\nاین یک مکالمه کوتاه بود از یک مصاحبه کاری بود! که با جواب برنامه نویس دید مصاحبه کننده از برنامه نویس عوض میشه و از یک زاویه بالاتر اون رو میبینه چون کسی که کتابخونه برای یک زبان طراحی میکنه ، معلوم هست درک خوبی از اون زبان و الگوریتم داره ، در اصل طراحی یک کتابخونه مثل یک نمونه کار قوی برای رزومه شما هست  ، در روز با کتابخونه های مختلفی برنامه نویس ها برای توسعه سریع تر برنامه خودشون استفاده میکنن ، کتابخونه یعنی چی ؟ خیلی ساده کتابخونه به مجموعه ای از کد ها و توابع هستند که توسط توسعه دهندگان برای انجام وظایف خاص و تکراری در یک زبان مورد استفاده قرار می گیرند، مثل کتابخونه نمایش پیغام ، یا کتابخونه ایجاد اسلایدر تصاویر و.. کلی کتابخونه کاربردی  در این دوره آموزشی شما به یادگیری نکات نوشتن کد کتابخونه، ساخت مستندات جامع برای کتابخونه خواهید پرداخت ، و کتابخونه های متنوعی رو به صورت پروژه محور اجرا خواهیم کرد تا هم جاوااسکریپت و دانش فرانت اند شما قوی بشه هم یک مهارت جدید به خودتون و رزومه کاری خودتون اضافه کنید",
+        "slug": "tosaah-tbkhnh-b-gosrt",
+        "publish": "2023-11-14T15:08:03+03:30",
+        "created": "2024-03-31T15:08:40.139+03:30",
+        "updated": "2024-03-31T15:10:30.565+03:30",
+        "status": "PB",
+        "reading_time": 0
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 8,
+    "fields": {
+        "author": 2,
+        "title": "آموزش جامع api نویسی با PHP",
+        "description": "در دنیای امروزی توسعه نرم‌افزار، استفاده از رابط‌های برنامه‌نویسی (API) برای ارتباط و تبادل اطلاعات بین سامانه‌ها و برنامه‌ها بسیار رایج است.\r\n\r\nایجاد API های کارا و قابل استفاده امری اساسی برای توسعه دهندگان نرم‌افزار است که به دنبال افزایش کارایی، قابلیت‌ها و امکانات پروژه‌های خود هستند. این دوره آموزشی با عنوان “آموزش API نویسی با PHP”، به شرکت‌کنندگان ابزارها و تکنیک‌های لازم برای ایجاد و مدیریت API های وب را ارائه می‌دهد.\r\n\r\nاین دوره مناسب برای دو گروه اصلی افراد است.\r\n\r\n1. اولین گروه، توسعه‌دهندگان PHP هستند که می‌خواهند مهارت خود در زمینه نوشتن API های وب را گسترش دهند. این افراد با استفاده از دانش و تجربیات PHP خود، به ایجاد API هایی با عملکرد بالا و قابلیت انعطاف پذیری بیشتر می‌پردازند.\r\n\r\n2. دومین گروه افراد، توسعه‌دهندگان فرانت‌اند هستند که علاقه‌مند به ایجاد API های سفارشی برای پروژه‌های وب خود هستند. این افراد می‌خواهند به راحتی با استفاده از زبان PHP و دانش فنی خود، API هایی را پیاده سازی کنند که برای نیازهای خاص پروژه‌هایشان منطبق باشند.\r\n\r\nدر این دوره، ابتدا با مقدمه‌ای در مورد مفهوم و اهمیت API ها شروع می‌کنیم. سپس به بررسی مفاهیم پایه PHP می‌پردازیم که برای توسعه دهندگان ضروری است.\r\n\r\nامنیت API ها نیز یکی از مواردی است که در این دوره به آن پرداخته می‌شود. شرکت‌کنندگان با مدیریت دسترسی‌ها و مجوزها، و استفاده از توکن‌های امنیتی برای احراز هویت آشنا می‌شوند.\r\n\r\nدر بخش‌های پایانی این دوره، به توسعه و تست API ها و مستندسازی آنها می‌پردازیم.\r\n\r\nشرکت‌کنندگان با استفاده از ابزارها و تکنیک‌های توسعه برای ایجاد و تست API ها آشنا می‌شوند و نحوه ایجاد مستندات جامع برای API ها را فرا می‌گیرند.\r\n\r\nدر نهایت، هدف اصلی این دوره آموزشی، تسلط شرکت‌کنندگان بر مفاهیم و تکنیک‌های API نویسی با استفاده از PHP برای ایجاد و مدیریت API های قابل استفاده در پروژه‌های وب است.\r\n\r\nاین دوره به شرکت‌کنندگان امکان می‌دهد تا با استفاده از دانش و تجربیات فنی خود، API هایی را طراحی و پیاده سازی کنند که با نیازها و مشکلات پروژه‌هایشان هماهنگی داشته باشند.",
+        "slug": "mozsh-gmaa-api-nos-b-php",
+        "publish": "2024-03-30T15:08:54+03:30",
+        "created": "2024-03-31T15:09:31.045+03:30",
+        "updated": "2024-03-31T15:10:30.543+03:30",
+        "status": "PB",
+        "reading_time": 0
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 9,
+    "fields": {
+        "author": 2,
+        "title": "تست نفوذ با BadUSB",
+        "description": "هدف دوره تست نفوذ با BadUSB سبزلرن، آشنایی با روش مهاجمان برای ساخت فلش مخصوص این کار و سناریوهای قابل پیاده سازی در این روش نفوذ هست که به شما کمک میکنه در زمان حمله (تست نفوذ) و دفاع، به خوبی تکنیک ها و نکات رو بدونید و اجرا کنید. در ادامه جزئیات بیشتری در مورد این نوع حمله رو با شما به اشتراک میذاریم.\r\n\r\nدر دنیای هک و امنیت آشنایی با روش های نفوذ اهمیت بسیار بالایی داره چون هرچقدر به تکنیک ها و ابزارهای مهاجمان مسلط تر باشید، احتمال هک شدن یا قربانی شدن را به حداقل می رسونید.\r\n\r\nیکی از مخفی ترین و در عین حال راحتترین روش های نفوذ همینHID  یا Human Interface Device هست. در این روش فرد مهاجم از یک طریق یک دستگاه فلش مموری USB، به سیستم موردنظر نفوذ کرده و دستوراتی رو به اهداف مختلف در کامپیوتر قربانی اجرا میکنه. از اونجا که این USB طوری پیکربندی میشه که سیستم عامل، اون رو (در کمال گیجی!) به عنوان یک دستگاه کیبرد  شناسایی میکنه، نرم افزارهای امنیتی مثل آنتی ویروس هم قادر به تشخیص اون نیستن و به این ترتیب حسابی سیستم رو اصطلاحا شخم میزنه…\r\n\r\nکمی ساده تر بگیم.\r\n\r\nداستان از این قراره که این دستگاه USB مخصوص که جلوتر نحوه ساخت اون رو خواهیم گفت، طوری پیکربندی میشه که مثل یک کیبرد عمل کرده و با اجرای RUN و بعد محیط خط فرمان (CMD) از طریق کلیدهای میانبر، دستورات از قبل تعریف شده رو به سیستم میده و سناریوهای مختلفی رو اجرا میکنه. از جمله این سناریوها میتونیم به تخلیه اطلاعات هارد، اضافه یا حذف فایل و نرم افزار، فرمت کلی هارد و حتی استفاده از سیستم به عنوان قربانی برای حملات به جاهای دیگه اشاره کنیم که حتی در سازمان های بزرگ هم اتفاق افتاده!\r\n\r\nاین دوره چه فرقی با بقیه دوره ها داره؟\r\nما هم مثل شما میدونیم که در هر زمینه‌ ای منابع آموزشی زیادی وجود داره. اما اینکه اون منبع، مطالب آموزشی رو بر اساس تجربه و تحقیقات مختلف به صورت بومی سازی شده ارائه بده یا صرفا کپی از منابع رسمی و کتابی، مسئله مهمیه!\r\n\r\nدوم اینکه برخلاف اکثر دوره ها، قرار نیست فقط به معرفی ابزار و چندتا مثال ساده اکتفا کنیم. به این معنی که قراره بیش از 80 درصد زمان آموزش رو به انجام کارهای عملی و انجام تست های مختلف بگذرونید تا با ابزارهای مختلفی که بهتون معرفی میشه، کارهای واقعی انجام بدید و اعتماد به نفس و اطمینان لازم رو به دست بیارید. چون با مدرسی سروکار دارید که روی لبه تکنولوژی و تکنیک های نفوذ و امنیت سایبری حرکت می کنه و تار و پود ذهنش با این تخصص گره خورده.\r\n\r\nسوم هدفمند بودن دوره آموزش تست نفوذ با BadUSB هست که مستقیما روی تربیت یک نیروی متخصص تست نفوذ و امنیت تمرکز داره و نه فقط ارائه مطالب درسی!\r\n\r\nدر این دوره مطالب به صورت کامل سناریو محور و عملی تدریس میشه به طوری که بعد از دوره واقعا احساس کنید قدرت و مهارت جدیدی بهتون اضافه شده.\r\n\r\nنکته چهارم و جذاب هم اینه که پشتیبانی این دوره به صورت مادام العمر هست و شما میتونید با خیال راحت روی دریافت راهنمایی مستمر تا رسیدن به مرحله تسلط کامل حساب کنید چون اعتقاد مباحث مربوط به برنامه نویسی و امنیت جز با داشتن راهنمای خوب و در دسترس لذت بخش نخواهد بود.\r\n\r\nتوی این دوره دقیقا چی یاد میگیریم؟\r\nدر دوره آموزش تست نفوذ با BadUSB، در ابتدا مفاهیم پایه ای مربوط به بد یو اس بی رو یاد می گیرید تا خیلی خوب با اصطلاحات و مفاهیم اساسی این دوره آشنا بشید و کاملا در فضای اون قرار بگیرید\r\n\r\nدر ادامه محصول USB رابر داکی رو به شما معرفی کرده و سعی میکنیم نسبت به تحلیل هایی که داشتیم، فرآیند ساخت یک BadUSB رو شروع کنیم.\r\n\r\nدر مرحله بعد، دستورات و شرایط برنامه نویسی این نوع حملات رو یاد می گیرید.\r\n\r\nدر آخر هم سناریوهای مختلف و جذابی رو باهم به اجرا در میاریم تا بتونید حداکثر روش های ممکن برای نفوذ از این طریق رو شناسایی کرده و به اونها مسلط بشید.\r\n\r\nبعداز گذروندن این دوره به چه سطحی میرسیم؟ میتونیم چیکار کنیم؟\r\nبعد از دیدن دوره تست نفوذ با BadUSB شما کاملا با حملات BadUSB آشنا میشید و از اون مهمتر از طریق سناریوهایی که یاد گرفتید و همینطور USB مخصوص این کار که نحوه ساخت اون رو هم آموزش دیدید، میتونید سناریوهای مختلفی رو برای حمله پیاده سازی کنید و به مرور زمان با اضافه کردن حملات و سناریوهای جدید اون رو توسعه بدید.\r\n\r\nاگه این دوره رو نبینم چه اتفاقی میفته؟\r\nجواب این سوال بستگی به این داره که کارتون و علاقه‌مندیتون ارتباطی به هک و امنیت و شبکه داره یا نه! اگر نداره پس لزوما اتفاق خاصی نمیفته! در غیر این صورت جزو واجبات مسیر شغلی شما خواهد بود.\r\n\r\nچون این دوره مخصوص علاقه مندان حوزه امنیت و هک طراحی شده و طبیعتا کسانی که به این موضوعات علاقه ای ندارن یا ارتباطی به مسیر حرفه ای فعلیشون نداره، مخاطب این دوره محسوب نمیشن. اما اگر در حوزه تکنولوژی فعالیت می کنید (به ویژه شبکه و برنامه نویسی) پیشنهاد می کنیم دوره هایی مثل تست نفوذ با BadUSB رو بعد از گذروندن پیش نیازها، در اولویت بذارید تا بعدها در مقاطع مختلف زندگی حرفه ای تون بتونید از این دانش و تکنیک ها استفاده کنید. هم در ایمن سازی پروژه های که خودتون می نویسید و هم برای پروژه دیگران یا انجام تست نفوذ روی اونها!\r\n\r\nآینده بازار کار این دوره به کجا ختم میشه؟ ارزش وقت گذاشتن داره؟\r\nدر جواب این سوال همین بس که بگیم آشنایی و تسلط به روش های حمله و دفاع سایبری مثل تست نفوذ با BadUSB، جزو واجبات اساسی برای علاقه مندان و متخصصان حوزه هک و امنیت و تست نفوذ محسوب میشه و هرکسی برای شروع یا ادامه مسیر حرفه ای شدن در زمینه امنیت سایبری باید چنین آموزش هایی ببینه.\r\n\r\nحالا فکر می کنید با وجود پیچیدگی و گستردگی تکنولوژی حال حاضر و آینده، برای حفظ امنیت و پیشگیری از نفوذ، این تخصص ها و مهارت ها آینده فوق العاده ای نداره؟!\r\n\r\nهمونطور که اشاره کردیم دوره تست نفوذ با BadUSB یک دوره متوسط به حرفه ای و بین المللی هست و با توجه به سهم بالای این روش حملات امنیتی، فرصت های خوبی برای متخصصان مسلط به این نوع حملات ایجاد شده و خواهد شد.\r\n\r\nچه تضمینی هست خوب و کامل یاد بگیرم ؟\r\nچند دلیل هست که معمولا باعث عدم نتیجه‌گیری شما از دوره آموزش تست نفوذ با BadUSB یا هر دوره دیگه ای میشه :\r\n\r\n1 – کیفیت پایین محتوای آموزشی و سبک و تسلط مدرس\r\n\r\n2 – عدم اشتیاق و علاقه مندی کافی شما برای یادگیری\r\n\r\n3 – نبود پشتیبانی در دسترس و قوی در طول آموزش\r\n\r\n4 – عدم مرور و تمرین مطالب (انبار کردن اونها برای روز مبادا !)\r\n\r\nدو مورد اینها بر عهده شماست و دو مورد هم بر عهده سبزلرن. ما به شما قول میدیم این آموزش رو با بالاترین کیفیت و موثرترین پشتیبانی در اختیار شما قرار بدیم. شما قول میدید که با علاقه و پشتکار تمام تمرینات رو انجام بدید تا به نتیجه برسید؟! پس همه چی حله…\r\n\r\nچه پروژه هایی در طول دوره کار میشه؟\r\nمدرس در دوره تست نفوذ با BadUSB حداقل 6 سناریوی مختلف بد یو اس بی رو جلوی چشم شما پیاده سازی کرده و از پیلودها و سیستم عامل های مختلف برای اجرای حملات استفاده میکنه تا دیدتون بازتر بشه و در هر شرایطی بتونید از نکات این دوره بهره ببرید.\r\n\r\nمدرس دوره چه کسی هست؟\r\nمدرس این دوره استاد اشکان مقدس هست که با سابقه 8 ساله، تجربه بالا و تخصص های متنوعی که در زمینه هک و امنیت داره، مطالب رو به ساده ترین شکل ممکن بیان می کنه به طوری که اگر مقاومت کنید هم یاد می گیرید J\r\n\r\nایشون به این دلیل انتخاب شده که چندین ساله به صورت تخصصی در حوزه تست نفوذ، هک و امنیت سایبری فعالیت میکنه و این موضوع رو می تونید از پروفایل های ایشون در شبکه هایی مثل گیت هاب متوجه بشید.\r\n\r\nیکی دیگه از خصلت های ویژه ایشون اهمیت به پشتیبانی فنی دانشجوهاست که خیال شمارو بابت گرفتن جواب سوالاتون راحت میکنه.\r\n\r\nدر آخر اینکه آقای مقدس هم مثل بقیه اساتید سبزلرن یه راست وارد اصل مطلب میشه و چون خودش مستقیما درگیر شرایط بازار کار و آخرین به روزرسانی های این تخصص هست، کاملا عمل گرایانه درس میده و می تونیم بگیم که باکیفیت ترین دوره آموزش تست نفوذ با BadUSB رو در کنار ایشون تجربه خواهید کرد.\r\n\r\nچطور میتونم بهترین نتیجه رو از این دوره بگیرم؟\r\nاز اونجایی که سطح دوره تست نفوذ با BadUSB متوسط رو به حرفه ای هست، طبیعتا حجم زیادی از دوره کار عملی خواهد بود. بنابراین نت برداری دقیق و تحقیق بعد از جلسه و همینطور انجام تمرینات و تست های مختلف بر اساس سرفصل هایی که آموزش می بینید، میتونه در تثبیت آموزش ها خیلی خیلی موثر باشه.\r\n\r\nیادتون باشه این دوره یکی از مهمترین دوره هایی هست که در حوزه تخصص خودتون قراره ببینید و عیار یک مهندس امنیت سایبری در همین دوره‌هاست که بیشتر میشه. در واقع چنین دوره هایی در تعیین سرنوشت شغلی شما نقش خیلی مهمی دارن و هرچقدر از ریشه خوب یاد بگیرید و خوب تمرین کنید، در ادامه سریع تر و بهتر پیشرفت خواهید کرد. پس پیشنهاد می کنیم با علاقه و انگیزه کافی در اون حضور پیدا کنید تا به کمک پشتیبان هایی که براتون درنظر گرفته شده، بهترین نتیجه رو بگیرید.\r\n\r\nآیا به پیش زمینه خاصی نیاز داره؟\r\nاز اونجایی که دوره تست نفوذ با BadUSB جزو دوره های سطح متوسط و بالاتر حوزه امنیت و تست نفوذ هست، توضیه میشه که قبل از دیدن اون باید دوره های مقدماتی تر مثل +Network ، آموزش لینوکس با گرایش امنیت و CEH یا هکر قانونمند رو گذرونده باشید. در این صورت ارتباط بهتری با مطالب برقرار می کنید اما اصلا به معنی این نیست که بدون اینها نمیتونید وارد دوره بشید چون تا حد امکان سعی شده مطالب به زبان ساده و از صفر آموزش داده بشه و مشکلی از این بابت نخواهید داشت.\r\n\r\nخبر خوب اینه که هر سه تای این دوره ها در ویترین آموزشی سبزلرن موجود هستن. پس اگر در ابتدای کار هستید یا حس می کنید هنوز آمادگی لازم رو برای دوره تست نفوذ با BadUSB ندارید، می تونید با یک سرمایه گذاری هوشمندانه، همه چیز رو از اول اصولی و عملی یاد بگیرید.\r\n\r\nاین دوره برای چه کسانی مناسب هست؟\r\nاگر شرایط فعلی یا آینده شما به یکی از حالت های زیر نزدیکه، دوره آموزش تست نفوذ با BadUSB دقیقا برای شماست.\r\n\r\n1 – افرادی که قصد دارن به عنوان متخصص حرفه ای امنیت شبکه و نفوذ در صنعت IT فعالیت کنن.\r\n\r\n2 – افرادی که مسئولیت مدیریت شبکه ها و سرورهای کامپیوتری رو بر عهده دارن. چون این افراد باید در پیکربندی سیستم نکات امنیتی برای جلوگیری از حملات با BadUSB رو لحاظ کرده و اقدامات امنیتی لازم رو انجام بدن. حتما شما هم موافقید که ممکنه در سازمان ها و شرکت های بزرگ، بحث امنیت میلیاردها تومن پول، نرم افزارهای سازمانی مهم یا کلی اطلاعات هویتی محرمانه در معرض خطر سرقت یا نابودی قرار بگیره. بنابراین کوچکترین خطا یا ناآگاهی منجر به خسارت بزرگی خواهد شد.\r\n\r\n3 – افرادی که دوست دارن در حوزه تیم قرمز کار کنن.\r\n\r\nوقتی این دوره رو دیدم قدم بعدیم چیه؟\r\nشما اگر دوره های پیش نیازی که قبلا معرفی کردیم رو گذرونده باشید، بعد از دوره تست نفوذ با BadUSB میتونید خودتون رو برای شاه دوره ی سبزلرن در حوزه هک و امنیت یعنی آموزش پایتون برای هکرها یا دوره هکر قانونمند آماده کنید که فنون ماهیگیری و نهایت تکنولوژی در اونجا بهتون آموزش داده میشه. از اون به بعد هست که خودتون دست به کد میشید و تو فضای امنیت سایبری گردوخاک به پاک می کنید (البته مجاز!!!)\r\n\r\nروزی چند ساعت باید وقت بگذارم تا خوب یاد بگیرم؟\r\nاین سوال در مورد هر دوره ای به خصوص دوره های عملی مثل تست نفوذ با BadUSB غلط هست چون هر شخصی نسبت به آمادگی ذهنی، علاقه، پشتکار و زمانی که برای آموزش اختصاص میده، تعیین میکنه هر درسی رو در چه زمانی یاد بگیره.\r\n\r\nاما طبق تجربه، اگه بتونید به مدت یک هفته روزی دو ساعت زمان اختصاص بدید خیلی راحت میتونید به تمام مباحثی که گفته شده تسلط پیدا کنید و اصلا کار سختی نخواهید داشت.\r\n\r\nیادتون باشه فاکتور اشتیاق و تمرین در کوتاهتر شدن یا بلندتر شدن این بازه زمانی نقش خیلی مهمی دارن!\r\n\r\nاگر با سوال یا مشکلی مواجه شدم، پشتیبانی می کنید؟\r\n100% !!! اون هم رایگان، سریع و در دسترس!\r\n\r\nما در سبزلرن اعتقاد داریم تا زمانی که دانشجو در عمل نتونسته صفر تا صد مطالب دوره رو به صورت عملی پیاده سازی کنه، هنوز یادگیریش تموم نشده و تا رسیدن به این مرحله، تیم پشتیبانی در دسترس شما هست تا هر سوال یا ابهامی داشتید به شما کمک کنه. هم از طریق مدرس و هم پشتیبان‌های اختصاصی دوره آموزش تست نفوذ با BadUSB.\r\n\r\nاین پشتیبانی مادام العمر خواهد بود و تا روزی که استخدام بشید یا پروژه های بزرگ بگیرید و حساب بانکیتون رو مثل ذهنتون پر کنید، سبزلرن در کنار شماست. تمام قد!\r\n\r\nاین دوره گارانتی هم داره؟!\r\nبهترین تضمین، مطالعه کامنت دانشجوها در سایر دوره ها و رایگان بودن 40 درصد همه دوره های سبزلرن هست که همه ریسک هارو برای شما حذف میکنه. بنابراین می تونید با خیال راحت و بدون دغدغه فقط روی آموزش دیدن تمرکز کنید و قبل از پرداخت هزینه، با سبک تدریس و کیفیت کلی دوره آشنا بشید.\r\n\r\nما سال هاست که در زمینه آموزش برنامه نویسی، هزاران دانشجوی عزیز مثل شمارو تحویل جامعه برنامه نویسی، امنیت سایبری و به طور کلی IT دادیم و همیشه سعی کردیم با رفع نواقص و خطاها، بهترین شرایط رو فراهم کنیم. با این وجود اگر به هر دلیلی از آموزش ها راضی نبودید می تونید خیلی راحت به پشتیبانی تیکت بزنید و وجه پرداختی خودتون رو پس بگیرید. این حق شماست!\r\n\r\nکلام آخر\r\nتوضیحات دوره انقدر جامع و شفاف بود که بعید می‌دونیم جای سوال و ابهامی برای شما باقی مونده باشه اما به طور خلاصه و برای یادآوری، به شما می‌گیم که این دوره با همراهی یک استاد حرفه ای و کاربلد، مطالب کامل و بیانی ساده آماده شده که گذروندن اون میتونه یک قدم بزرگ و محکم به سمت تخصص هک و تست نفوذ باشه.\r\n\r\nبنابراین اگر قصد دارید به طور تخصصی وارد حوزه هک و امنیت بشید یا الان هستید ولی قصد حرفه ای تر شدن دارید، گذروندن دوره آموزش تست نفوذ با BadUSB یک پله ی جذاب و کاربردی برای شما محسوب میشه که باید با موفقیت بالا برید و خودتون رو در سطح متوسط این تخصص تثبیت کنید چون این روش هک در سراسر دنیا مورد توجه هست.\r\n\r\nبرای همین خیلی مهمه که از چه منبعی و با چه کیفیتی چنین دوره مهم و بین المللی رو آموزش می بینید تا در آینده به مشکل نخورید.\r\n\r\nپیشنهاد می کنیم هرچه زودتر این دوره رو شروع کنید تا بتونید دوره های حرفه ای تر رو هم در فاصله کوتاه و با موفقیت بگذرونید و روز به روز به اهداف بزرگتون نزدیک تر بشید. ”\r\n\r\n—- هر سوال یا ابهامی داشتید حتما با ما در میون بگذارید تا کارشناسان فنی سبزلرن در سریعترین زمان ممکن اون رو برای شما رفع کنن. —",
+        "slug": "tst-nfoth-b-badusb",
+        "publish": "2024-01-11T15:09:41+03:30",
+        "created": "2024-03-31T15:10:13.162+03:30",
+        "updated": "2024-03-31T15:10:30.563+03:30",
+        "status": "PB",
+        "reading_time": 0
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 10,
+    "fields": {
+        "author": 1,
+        "title": "test",
+        "description": "dsfbdsfbsdfbsbn",
+        "slug": "test",
+        "publish": "2024-04-18T16:59:55.811+03:30",
+        "created": "2024-04-18T16:59:55.811+03:30",
+        "updated": "2024-04-18T17:01:28.429+03:30",
+        "status": "RJ",
+        "reading_time": 10
+    }
+},
+{
+    "model": "blog.ticket",
+    "pk": 8,
+    "fields": {
+        "name": "matin raisi",
+        "massege": "ascasc",
+        "email": "raisi.m630@gmail.com",
+        "phone": "09156308230",
+        "sunject": "انتقاد"
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 1,
+    "fields": {
+        "post": 5,
+        "name": "matin raisi",
+        "body": "wafasvasdvadv",
+        "created": "2024-04-17T13:35:04.935+03:30",
+        "updated": "2024-04-17T13:35:53.269+03:30",
+        "active": true
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 2,
+    "fields": {
+        "post": 5,
+        "name": "11",
+        "body": "asfasfasf",
+        "created": "2024-04-17T13:42:30.475+03:30",
+        "updated": "2024-04-17T13:42:39.043+03:30",
+        "active": true
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 3,
+    "fields": {
+        "post": 2,
+        "name": "متین ریسی",
+        "body": "django",
+        "created": "2024-04-17T13:44:04.256+03:30",
+        "updated": "2024-04-17T13:44:10.531+03:30",
+        "active": true
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 5,
+    "fields": {
+        "post": 2,
+        "name": "متین",
+        "body": "ADCASVCASVCASVC\r\nسیرسیر\r\nُیرسیرُ\r\n\r\nسیرسیرس\r\nسیرسیرس\r\nسیرسیریبذربی\r\nسیرسی",
+        "created": "2024-04-17T13:51:42.918+03:30",
+        "updated": "2024-04-17T13:55:58.314+03:30",
+        "active": true
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 6,
+    "fields": {
+        "post": 7,
+        "name": "matin raisi",
+        "body": "safasfasfasfas",
+        "created": "2024-04-17T14:00:12.100+03:30",
+        "updated": "2024-04-17T14:00:22.960+03:30",
+        "active": true
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 7,
+    "fields": {
+        "post": 9,
+        "name": "1",
+        "body": "gvkjblnnjbhvcgfn",
+        "created": "2024-04-18T15:41:48.462+03:30",
+        "updated": "2024-04-18T15:41:48.462+03:30",
+        "active": false
+    }
+}
+]
