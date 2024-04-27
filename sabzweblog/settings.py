@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # my app
     'blog',
     'django_jalali',
+    'django.contrib.postgres',
 ]
 
 MIDDLEWARE = [

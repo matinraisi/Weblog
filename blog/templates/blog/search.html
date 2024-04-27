@@ -1,0 +1,16 @@
+{% extends "parent/base.html" %}
+{% load blog_tags %}
+{% block title %}search post{% endblock title %}
+
+{% block content %}
+ {% if query %}
+    {{result.count}}
+{% endif %} 
+
+
+{% for post in result %}
+<a href="{{post.get_absolute_url}}">{{post.title}}</a>
+{% empty %}
+    {% comment %} چیزی یافت نشد {% endcomment %}
+{% endfor %}
+{% endblock content %}

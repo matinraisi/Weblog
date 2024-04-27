@@ -3,6 +3,18 @@
 {% block title %}home{% endblock title %}
 
 {% block content %}
+
+{% for post in result %}
+<span class="alert alert-dark" >
+<a href="{{post.get_absolute_url}}">{{post.title}}</a>
+
+</span>
+{% endfor %}
+
+
+
+<hr>
+
 <h1>home page</h1>
 <p>تعداد کل پست ها:{% total_post %}</p>
 <p>تعداد کل کامنت ها:{%total_comment%} </p>

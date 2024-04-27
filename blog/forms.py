@@ -1,6 +1,7 @@
 from django import forms
 from .models import Comment , Post
 from django.contrib.auth.models import User
+
 class TicketForm(forms.Form):
      subject_select = (
          ("پیشنهاد" , "پیشنهاد"),
@@ -33,7 +34,6 @@ class CommentForm(forms.ModelForm):
           model = Comment
           # exclude = ['created']
           fields = ['name','body']
-          
 class PostForm(forms.Form):
     author = forms.ModelChoiceField(queryset=User.objects.all() ,required=True)
     title = forms.CharField(max_length =50 , required=True)
@@ -54,5 +54,5 @@ class PostForm(forms.Form):
                    raise forms.ValidationError("نام کوتاه است!")
               else:
                     return title
-     
-     
+class SearchForm(forms.Form):
+     query = forms.CharField()

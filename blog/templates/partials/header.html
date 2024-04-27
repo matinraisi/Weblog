@@ -1,1 +1,14 @@
-{% comment %} <p>header page</p> {% endcomment %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'blog:index' %}">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex" action="{% url 'blog:post_search' %}" method="GET">
+          <input class="form-control me-2" name="query" type="search" placeholder="Search" aria-label="Search">
+          <input class="btn btn-outline-success" value="Search" type="submit">
+        </form>
+      </div>
+    </div>
+</nav>

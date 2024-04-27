@@ -2,10 +2,11 @@ from django.shortcuts import render , get_object_or_404 ,redirect
 from django.http import HttpResponse , Http404 
 from .models import Post , Ticket
 from .forms import *
-from django.views.decorators.http import require_POST
-
+from django.views.decorators.http import require_POST , require_GET
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.views.generic import ListView , DetailView
+from django.db.models import Q
+from django.contrib.postgres.search import SearchVector , SearchQuery , SearchRank ,TrigramSimilarity
 # Create your views here.
 def Home(request):
     return render(request , "blog/index.html" )
@@ -104,3 +105,28 @@ def crete_post(request):
     else:
         form = PostForm()
     return render (request , "blog/createpost.html" , {"form" :form,})
+
+@require_GET
+def post_search(request):
+    query=None
+    result=[]
+    if 'query' in request.GET:
+        form = SearchForm(data=request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            # result = Post.objects.filter(Q(title__icontains = query) | Q(description__icontains = query) )
+            # result = Post.objects.filter(description__search = query)
+            # ===================
+            search_query = SearchQuery(query)
+            search_vector = SearchVector('title' , 'description')
+            result = Post.objects.annotate(search=search_vector , rank=SearchRank(search_vector,search_query)).filter(search  = search_query).order_by('-rank')
+            #  SearchQuery(query) فارسی کامل پشتیبانی نمیشود
+            # ====================
+            # result = Post.objects.annotate(similarity = TrigramSimilarity('description' , query)).filter(similarity=0.1).order_by('-similarity')
+            # print(result)
+            # print(result)
+    context = {
+        'query':query,
+        'result':result,
+    }
+    return render(request , 'blog/index.html' , context)
