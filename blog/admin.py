@@ -28,4 +28,8 @@ class CommentAdmin(admin.ModelAdmin):
     list_filter = ['active',('created' ,JDateFieldListFilter) , ('updated' ,JDateFieldListFilter)]
     search_fields = ['name' , 'body' ]
     list_editable = ['active']
-    
+
+
+@admin.register(ImagePost)
+class ImagePostAdmin(admin.ModelAdmin):
+    list_display = ['title',]

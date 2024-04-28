@@ -10,6 +10,7 @@
         {% comment %} <a href=""><h3></h3></a> {% endcomment %}
         <p>{{i.description | truncatewords:8}}</p>
         {% comment %} <p>{{i.}}</p> {% endcomment %}
+        <img src=" {{ i.images.first.Image_file.url }}" alt="{{ i.images.first.title }}">
     </li>
     {% endfor %}
 </ol>

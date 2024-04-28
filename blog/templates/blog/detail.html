@@ -7,6 +7,14 @@
 <hr>
 <h1>{{post}}</h1>
 <p>{{post.publish|jformat:"%Y/%m/%d - (%H:%M)"}}</p>
+
+<div>
+    {% for img in post.images.all %}
+        <img with="300px" height="200px" src="{{img.Image_file.url}}" alt="{{img.title}}">    
+    
+    {% endfor %}
+</div>
+
 <hr>
 <form method="POST" action="{% url "blog:post_comments" post.id %}">
     {% csrf_token %}
