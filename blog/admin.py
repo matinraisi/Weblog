@@ -5,6 +5,18 @@ from django_jalali.admin.filters import JDateFieldListFilter
 # admin.sites.AdminSite.site_header = " پنل مدیریتی جنگو"
 # admin.sites.AdminSite.site_title = "پنل"
 # admin.sites.AdminSite.index_title = "پنل مدیریتی"
+
+# inlines 
+
+class ImageInline(admin.TabularInline):
+    model = ImagePost
+    extra = 2
+
+
+class CommentInline(admin.TabularInline):
+    model = Comment
+    extra = 0
+
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = ['title' , 'author' , 'publish','status']
@@ -15,6 +27,7 @@ class PostAdmin(admin.ModelAdmin):
     date_hierarchy = 'publish'
     prepopulated_fields = {"slug":['title']}
     list_editable = ['status']
+    inlines = [ImageInline , CommentInline]
     
 @admin.register(Ticket)
 class TicketAdmin(admin.ModelAdmin):

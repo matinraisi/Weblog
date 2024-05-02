@@ -3,6 +3,11 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django_jalali.db import models as jmodels
 from django.urls import reverse
+from django_resized import ResizedImageField
+from django.db.models.signals import pre_delete
+from django.dispatch import receiver
+import os
+from datetime import datetime
 # Create your models here.
 class publishedManager(models.Manager):
     def get_queryset(self):
@@ -80,9 +85,20 @@ class Comment(models.Model):
     def __str__(self) :
         return f"{self.name} : {self.post}"
     
+    
+def upload_to(instance, filename):
+    # دریافت تاریخ و زمان فعلی
+    now = datetime.now()
+    # تعیین مسیر آپلود بر اساس سال
+    upload_path = os.path.join('Post_image', str(now.year))
+    # تعیین نام فایل
+    _, ext = os.path.splitext(filename)
+    file_name = f'{instance.pk}{ext}'
+    # ترکیب مسیر آپلود و نام فایل
+    return os.path.join(upload_path, file_name)
 class ImagePost(models.Model):
      post = models.ForeignKey(Post,on_delete = models.CASCADE,related_name = "images" ,verbose_name = "پست")
-     Image_file = models.ImageField(upload_to='Post_image/')
+     Image_file = ResizedImageField(upload_to=upload_to , crop=['middle', 'center'] , size=[500,500],quality=75)
      title = models.CharField(max_length =50 , null=True,blank=True , verbose_name = "عنوان")
      description = models.CharField(max_length =255,null=True,blank=True , verbose_name = "توضیحات")
      created = jmodels.jDateTimeField(auto_now_add=True)
@@ -94,9 +110,16 @@ class ImagePost(models.Model):
             models.Index(fields=['created'])
         ]
         verbose_name = "تصویر پست"
-        verbose_name_plural = "تصویر پست ها"
-        
-        
+        verbose_name_plural = "تصویر پست ها"       
      def __str__(self) :
-        return self.title if self.title else "-"
+        return self.title if self.title else self.Image_file.name
     
+    
+@receiver(pre_delete, sender=ImagePost)
+def delete_image_file(sender, instance, **kwargs):
+    # بدست آوردن مسیر فایل
+    image_path = instance.Image_file.path
+    
+    # حذف فایل
+    if os.path.isfile(image_path):
+        os.remove(image_path)
