@@ -13,4 +13,6 @@ urlpatterns = [
     path('ticket/', views.create_ticket , name = "create_ticket"),
     path('posts/create/', views.crete_post , name = "crete_post"),
     path('posts/search/', views.post_search , name = "post_search"),
+    path('profile/', views.profile , name = "profile"),
+
 ]

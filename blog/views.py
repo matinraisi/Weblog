@@ -12,6 +12,7 @@ from itertools import chain
 def Home(request):
     return render(request , "blog/index.html" )
 
+
 # def Post_list(request):
 #     posts = Post.published.all()
 #     paginator = Paginator(posts, 2)
@@ -107,6 +108,27 @@ def crete_post(request):
         form = PostForm()
     return render (request , "blog/createpost.html" , {"form" :form,})
 
+
+# def crete_post(request):
+#     if request.method == "POST":
+#         form = PostForm(request.POST)
+#         if form.is_valid():
+#             cd = form.cleaned_data
+#             Post.objects.create(
+#                 title = cd['title'],
+#                 author = cd['author'],
+#                 slug = cd['slug'],
+#                 status = cd['status'],
+#                 reading_time = cd['reading_time'],
+#                 description = cd['description'],
+#             )
+#             return redirect("blog:index")
+#         # else:
+#         #      print(form.errors)
+#     else:
+#         form = PostForm()
+#     return render (request , "blog/createpost.html" , {"form" :form,})
+
 @require_GET
 def post_search(request):
     query=None
@@ -140,3 +162,12 @@ def post_search(request):
         'result':result,
     }
     return render(request , 'blog/index.html' , context)
+
+def profile(request):
+    user = request.user
+    post = Post.published.filter(author=user)
+    # print(post)
+    context = {
+        'post':post,
+    }
+    return render(request , 'blog/profile.html' , context)

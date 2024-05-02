@@ -2,6 +2,8 @@ panle
 user = blog
 pass =  blog1234
 
+matin==pass==>Hani1234
+<!-- ===================== -->
 <!-- parcice -->
 tmrin --> 
 1--> برای ایجاد پست فرم بنویس 

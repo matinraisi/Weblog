@@ -1,0 +1,34 @@
+{% extends "parent/base.html" %}
+{% block title %}list post{% endblock title %}
+
+{% block content %}
+
+<a href="">ایجاد پست جدید</a>
+
+
+<div class="container mt-5" dir="rtl">
+    <table class="table table-hover mt-5">
+        <thead>
+          <tr>
+              <th scope="col">ردیف</th>
+              <th scope="col">عنوان</th>
+              <th scope="col">ویرایش</th>
+              <th scope="col">حذف</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for item in post %}
+          <tr>
+                <th  >{{forloop.counter}}</th>
+                <td><a style="text-decoration: none;" href="{{item.get_absolute_url}}">{{item.title}}</a></td>
+                <td><a href="#" class="btn btn-primary" >ویرایش</a></td>
+                <td><a href="#" class="btn btn-danger">حذف</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+
+{% include "partials/pageination.html" with page_obj=page_obj%}
+<hr>
+{% endblock content %}
