@@ -88,27 +88,6 @@ def post_comments(request , post_id):
     }
     return render(request , "forms/comment.html" ,context) 
 
-def crete_post(request):
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            cd = form.cleaned_data
-            Post.objects.create(
-                title = cd['title'],
-                author = cd['author'],
-                slug = cd['slug'],
-                status = cd['status'],
-                reading_time = cd['reading_time'],
-                description = cd['description'],
-            )
-            return redirect("blog:index")
-        # else:
-        #      print(form.errors)
-    else:
-        form = PostForm()
-    return render (request , "blog/createpost.html" , {"form" :form,})
-
-
 # def crete_post(request):
 #     if request.method == "POST":
 #         form = PostForm(request.POST)
@@ -129,6 +108,24 @@ def crete_post(request):
 #         form = PostForm()
 #     return render (request , "blog/createpost.html" , {"form" :form,})
 
+def crete_blog(request):
+    if request.method == "POST":
+        form = CratePost(request.POST , request.FILES)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            img1 = ImagePost.objects.create(Image_file=form.cleaned_data['image1'] , post=post)
+            post.images.add(img1)
+            img2 = ImagePost.objects.create(Image_file=form.cleaned_data['image2'] , post=post)
+            post.images.add(img2)
+            post.save()
+            return redirect("blog:index")
+    else:
+        form = CratePost()
+    return render (request , "blog/createpost.html" , {"form" :form,})
+
+            
 @require_GET
 def post_search(request):
     query=None

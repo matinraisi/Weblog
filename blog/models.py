@@ -8,6 +8,7 @@ from django.db.models.signals import pre_delete
 from django.dispatch import receiver
 import os
 from datetime import datetime
+from django.template.defaultfilters import slugify
 # Create your models here.
 class publishedManager(models.Manager):
     def get_queryset(self):
@@ -47,6 +48,9 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse("blog:Post_detail", kwargs={"id": self.id})
 
+    def save(self , *args , **kwargs):
+        self.slug = slugify(self.title)
+        super().save(*args,**kwargs)
 
 
 class Ticket(models.Model):
