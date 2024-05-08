@@ -21,14 +21,14 @@
           <tr>
                 <th  >{{forloop.counter}}</th>
                 <td><a style="text-decoration: none;" href="{{item.get_absolute_url}}">{{item.title}}</a></td>
-                <td><a href="#" class="btn btn-primary" >ویرایش</a></td>
-                <td><a href="#" class="btn btn-danger">حذف</a></td>
+                <td><a href="{% url 'blog:edit_post' item.id %}" class="btn btn-primary" >ویرایش</a></td>
+                <td><a href="{% url 'blog:delete_post' item.id %}" class="btn btn-danger">حدف</a></td>
+
             </tr>
             {% endfor %}
         </tbody>
+        
       </table>
 </div>
 
-{% include "partials/pageination.html" with page_obj=page_obj%}
-<hr>
 {% endblock content %}

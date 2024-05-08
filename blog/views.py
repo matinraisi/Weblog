@@ -12,30 +12,12 @@ from itertools import chain
 def Home(request):
     return render(request , "blog/index.html" )
 
-
-# def Post_list(request):
-#     posts = Post.published.all()
-#     paginator = Paginator(posts, 2)
-#     page_number = request.GET.get('page',1)
-#     try:
-#         posts = paginator.page(page_number)
-#     except EmptyPage:
-#         posts = paginator.page(paginator.num_pages)
-#     except PageNotAnInteger:
-#         posts = paginator.page(1)
-#     context = {
-#         "posts" : posts,
-#     }
-#     return render(request , "blog/list.html" , context )
 class PostListview(ListView):
     paginate_by = 3  
     queryset = Post.published.all()
     context_object_name = "posts"
     template_name = "blog/list.html"
-# ----------------------------------------
-# class PostDitailview(DetailView):
-#     model = Post
-#     template_name = "blog/detail.html"   
+
 def Post_detail(request , id):
     post =  get_object_or_404(Post , id=id , status = Post.Status.PUBLISH)
     # try:
@@ -88,26 +70,6 @@ def post_comments(request , post_id):
     }
     return render(request , "forms/comment.html" ,context) 
 
-# def crete_post(request):
-#     if request.method == "POST":
-#         form = PostForm(request.POST)
-#         if form.is_valid():
-#             cd = form.cleaned_data
-#             Post.objects.create(
-#                 title = cd['title'],
-#                 author = cd['author'],
-#                 slug = cd['slug'],
-#                 status = cd['status'],
-#                 reading_time = cd['reading_time'],
-#                 description = cd['description'],
-#             )
-#             return redirect("blog:index")
-#         # else:
-#         #      print(form.errors)
-#     else:
-#         form = PostForm()
-#     return render (request , "blog/createpost.html" , {"form" :form,})
-
 def crete_blog(request):
     if request.method == "POST":
         form = CratePost(request.POST , request.FILES)
@@ -125,7 +87,6 @@ def crete_blog(request):
         form = CratePost()
     return render (request , "blog/createpost.html" , {"form" :form,})
 
-            
 @require_GET
 def post_search(request):
     query=None
@@ -168,3 +129,35 @@ def profile(request):
         'post':post,
     }
     return render(request , 'blog/profile.html' , context)
+
+
+def delete_post(request, post_id):
+    post = get_object_or_404(Post,id=post_id)
+    if request.method == "POST":
+        post.delete()
+        return redirect("blog:profile")
+    return render(request, 'forms/delete-post.html' , {post:'post'})
+
+def delete_image(request, post_id):
+    image = get_object_or_404(ImagePost,id=post_id)
+    image.delete()
+    return redirect("blog:profile")
+    return render(request, 'forms/delete-image.html' , {image:'image'})
+    
+def edit_post(request, post_id):
+    post = get_object_or_404(Post,id=post_id)
+    if request.method == "POST":
+            form = CratePost(request.POST , request.FILES , instance=post)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.save()
+                img1 = ImagePost.objects.create(Image_file=form.cleaned_data['image1'] , post=post)
+                post.images.add(img1)
+                img2 = ImagePost.objects.create(Image_file=form.cleaned_data['image2'] , post=post)
+                post.images.add(img2)
+                post.save()
+                return redirect("blog:index")
+    else:
+        form = CratePost( instance=post)
+        return render (request , "blog/createpost.html" , {"form" :form, "post" :post})

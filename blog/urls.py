@@ -15,5 +15,11 @@ urlpatterns = [
     path('posts/create/', views.crete_blog , name = "crete_blog"),
     path('posts/search/', views.post_search , name = "post_search"),
     path('profile/', views.profile , name = "profile"),
+    path('profile/delete_post/<post_id>', views.delete_post , name = "delete_post"),
+    path('profile/delete_image/<post_id>', views.delete_image , name = "delete_image"),
+    path('profile/edit_post/<post_id>', views.edit_post , name = "edit_post"),
+
+ 
+
 
 ]

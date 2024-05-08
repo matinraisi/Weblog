@@ -1,0 +1,14 @@
+{% extends "parent/base.html" %}
+{% load jformat %}
+{% block title %}comment post{% endblock title %}
+
+{% block content %}
+        <h4>از حدف کردن پست خود مطمن هستید!</h4>
+        <a href="{% url 'blog:profile' %}">بازگشت به پست</a>
+    <form method="POST" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value = "حذف" >
+    </form>
+    
+{% endblock content %}

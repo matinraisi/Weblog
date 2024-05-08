@@ -49,8 +49,15 @@ class Post(models.Model):
         return reverse("blog:Post_detail", kwargs={"id": self.id})
 
     def save(self , *args , **kwargs):
-        self.slug = slugify(self.title)
+        if not self.slug:
+            self.slug = slugify(self.title)
         super().save(*args,**kwargs)
+
+    def delete(self , *args , **kwargs):
+        for img in self.images.all():
+            storage , path = img.Image_file.storage , img.Image_file.path
+            storage.delete(path)
+        super().delete(*args,**kwargs)
 
 
 class Ticket(models.Model):

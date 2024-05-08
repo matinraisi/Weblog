@@ -18,7 +18,11 @@
 <div class="container">
     <form method = "POST" enctype='multipart/form-data'>
         {% csrf_token %}
-        {{form.as_p}}    
+        {{form.as_p}} 
+        {% for img in post.images.all %}
+            <img with="300px" height="200px" src="{{img.Image_file.url}}" alt="{{img.title}}"> 
+            <a href="{% url 'blog:delete_image' img.id %}">حذف پست</a>
+        {% endfor %}   
         <input type="submit" value="ثبت نظر" class="btn btn-primary float-end">
         
     </form>
