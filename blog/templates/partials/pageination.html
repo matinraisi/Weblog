@@ -1,31 +1,48 @@
-<div style="margin-left: 42%;" >
+<nav class="my-5" aria-label="navigation">
+  {% comment %} <div style="margin-left: 42%;" > {% endcomment %}
+    <ul class="pagination d-inline-block d-md-flex justify-content-center">
     {% if page_obj.has_previous %}
-    <a href="?page={{ page_obj.previous_page_number }}">« Previous page</a>
-  
+    {% comment %} <a href="?page={{ page_obj.previous_page_number }}">قبلی</a> {% endcomment %}
+    <li class="page-item">
+      <a class="page-link active" href="?page={{ page_obj.previous_page_number }}" tabindex="-1" aria-disabled="true">قبلی</a>
+    </li>
     {% if page_obj.number > 3 %}
-      <a href="?page=1">1</a>
-      {% if page_obj.number > 4 %}
-        <span>...</span>
-      {% endif %}
+    {% comment %} <a href="?page=1">1</a> {% endcomment %}
+    <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
+    {% if page_obj.number > 4 %}
+    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
     {% endif %}
-  {% endif %}
-  
-  {% for num in page_obj.paginator.page_range %}
+    {% endif %}
+    {% endif %}
+    
+    {% for num in page_obj.paginator.page_range %}
     {% if page_obj.number == num %}
-      <a href="?page={{ num }}">{{ num }}</a>
+    <li class="page-item">
+      <a  class="page-link" href="?page={{ num }}">{{ num }}</a>
+    </li>
     {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-      <a href="?page={{ num }}">{{ num }}</a>
+    <li class="page-item">
+      <a  class="page-link" href="?page={{ num }}">{{ num }}</a>
+    </li>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
   
-  {% if page_obj.has_next %}
+    {% if page_obj.has_next %}
     {% if page_obj.number < page_obj.paginator.num_pages|add:'-3' %}
       <span>...</span>
-      <a href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
-    {% elif page_obj.number < page_obj.paginator.num_pages|add:'-2' %}
-      <a href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+      <li class="page-item">
+        <a  class="page-link" href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+      </li>
+      {% elif page_obj.number < page_obj.paginator.num_pages|add:'-2' %}
+      <li class="page-item">
+        <a  class="page-link" href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a>
+      </li>
     {% endif %}
-  
-    <a href="?page={{ page_obj.next_page_number }}">Next Page »</a>
-  {% endif %}
-</div>
+    <li class="page-item">
+      <a class="page-link" href="?page={{ page_obj.next_page_number }}">بعد</a>
+    </li>
+    {% comment %} <a href="?page={{ page_obj.next_page_number }}">Next Page »</a> {% endcomment %}
+    {% endif %}
+  </ul>
+  {% comment %} </div> {% endcomment %}
+</nav>
